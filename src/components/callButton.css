@@ -1,0 +1,18 @@
+.call-button {
+    /*margin-left: 40px;*/
+    padding: 8px 24px;
+    background-color: #5048E5;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    text-align: inherit;
+    appearance: none;
+}
+
+.light-button {
+    background-color: #FFFFFF;
+    color: #5048E5;
+}
