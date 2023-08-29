@@ -1,6 +1,6 @@
 import ContentHeader from "./ContentHeader";
 import "./contentBox.css";
-import { goToLink } from "../services";
+import {goToLink, imageSrc} from "../services";
 
 function ContentBox({id, headerData, contentHeader, contentText, image, imageFirst, buttonText, contentLink}) {
     return (
@@ -20,10 +20,10 @@ function ContentBox({id, headerData, contentHeader, contentText, image, imageFir
                     {contentLink &&
                         <div className={'content-link'} onClick={() => goToLink(contentLink)}>
                             <div>Try Out Now</div>
-                            <img src={"/images/arrow-right.svg"} alt={'arrow-right'}/>
+                            <img src={imageSrc('arrow-right.svg')} alt={'arrow-right'}/>
                         </div>}
                 </div>
-                <img className={'content-image'} src={`images/${image}`} alt={image}/>
+                <img className={'content-image'} src={imageSrc(image)} alt={image}/>
             </div>
         </section>
     )

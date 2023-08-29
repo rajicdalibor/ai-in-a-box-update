@@ -1,7 +1,7 @@
 import "./navigation.css";
 import { useState } from "react";
 import CallButton from "./CallButton";
-import {goToLink} from "../services";
+import {goToLink, imageSrc} from "../services";
 
 
 const links = [
@@ -25,7 +25,7 @@ function Navigation() {
     return (
         <div className={"sticky-header"}>
             <div className={"navigation-wrapper"}>
-                <div className={"logo-icon"}><img src={"/images/logo.svg"} alt={'logo'}/></div>
+                <div className={"logo-icon"}><img src={imageSrc('logo.svg')} alt={'logo'}/></div>
                 <div className={'navigation-links'}>
                     {links.map(link => {
                             if (link.subitems?.length) {
@@ -35,13 +35,13 @@ function Navigation() {
                                             <div>{link.label}</div>
                                         </div>
                                         {activeLink === link.id ?
-                                            <img src={'/images/arrow-up-blue.svg'} alt='accordion' className={activeLink === link.id ? 'accordion-active' : 'accordion-inactive'}/> :
-                                            <img src={'/images/arrow-up-dark.svg'} alt='accordion' className={activeLink === link.id ? 'accordion-active' : 'accordion-inactive'}/>}
+                                            <img src={imageSrc('arrow-up-blue.svg')} alt='accordion' className={activeLink === link.id ? 'accordion-active' : 'accordion-inactive'}/> :
+                                            <img src={imageSrc('arrow-up-dark.svg')} alt='accordion' className={activeLink === link.id ? 'accordion-active' : 'accordion-inactive'}/>}
                                         {activeLink === link.id && <div className={'navigation-submenu'}>
                                             {link.subitems.map(item =>
                                                 <div key={item.label} className={'subitems'} onClick={() => goToLink(item.link)}>
                                                     <div>{item.label}</div>
-                                                    <img src={'/images/link.svg'} alt={'link'}/>
+                                                    <img src={imageSrc('link.svg')} alt={'link'}/>
                                                 </div>
                                             )}
                                         </div>}
@@ -61,10 +61,10 @@ function Navigation() {
 
                 {!menuOpen &&
                     <div className={'burger-menu'}>
-                        <img src={'/images/menu.svg'} alt={'menu'} onClick={() => setMenuOpen(true)}/>
+                        <img src={imageSrc('menu.svg')} alt={'menu'} onClick={() => setMenuOpen(true)}/>
                     </div>}
                 {menuOpen && <div className={'burger-menu'}>
-                    <img src={'/images/close.svg'} alt={'menu'} onClick={() => setMenuOpen(false)}/>
+                    <img src={imageSrc('close.svg')} alt={'menu'} onClick={() => setMenuOpen(false)}/>
                 </div>}
                 <div className={`link-menu ${menuOpen ? 'show' : 'hide'}`}>
                     <div className={'menu-wrapper'}>
@@ -75,14 +75,14 @@ function Navigation() {
                                         <div className={`submenu-item ${activeLink === link.id ? 'link-active' : ''}`}>
                                             <div>{link.label}</div>
                                         {activeLink === link.id ?
-                                            <img src={'/images/arrow-up-blue.svg'} alt='accordion' className={activeLink === link.id ? 'accordion-active' : 'accordion-inactive'}/> :
-                                            <img src={'/images/arrow-up-dark.svg'} alt='accordion' className={activeLink === link.id ? 'accordion-active' : 'accordion-inactive'}/>}
+                                            <img src={imageSrc('arrow-up-blue.svg')} alt='accordion' className={activeLink === link.id ? 'accordion-active' : 'accordion-inactive'}/> :
+                                            <img src={imageSrc('arrow-up-dark.svg')} alt='accordion' className={activeLink === link.id ? 'accordion-active' : 'accordion-inactive'}/>}
                                         </div>
                                         {activeLink === link.id && <div className={"mobile-submenu-items"}>
                                             {link.subitems.map(item =>
                                                 <div key={item.label} className={'subitems'} onClick={() => goToLink(item.link)}>
                                                     <div>{item.label}</div>
-                                                    <img src={'/images/link.svg'} alt={'link'}/>
+                                                    <img src={imageSrc('link.svg')} alt={'link'}/>
                                                 </div>
                                             )}
                                         </div>}

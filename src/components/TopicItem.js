@@ -1,8 +1,9 @@
 import './topicItem.css';
+import {imageSrc} from "../services";
 function TopicItem({image, text}) {
     return(
         <div className={'topic-wrapper'}>
-            <img src={`/images/${image}`} alt={image}/>
+            <img src={imageSrc(image)} alt={image}/>
             <div className={'topic-text'}>{text}</div>
         </div>
     );

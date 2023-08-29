@@ -1,10 +1,10 @@
 import './footer.css';
-import {goToLink} from "../services";
+import {goToLink, imageSrc} from "../services";
 function Footer() {
     return (
         <div id={'aboutUs'} className={'footer-wrapper'}>
             <div className={'footer-content'}>
-                <img src={"/images/logo.svg"} alt={'logo'} className={'footer-logo'}/>
+                <img src={imageSrc('logo.svg')} alt={'logo'} className={'footer-logo'}/>
                 <div className={'footer-contact'}>
                     <div className={'footer-company'}>3ap AG</div>
                     <div className={'footer-address'}>Aargauerstrasse 250</div>
@@ -14,9 +14,9 @@ function Footer() {
                 </div>
                 <div className={'footer-links'}>
                     <div className={'footer-networks'}>
-                        <img src={"/images/instagram.png"} alt={'instagram'} onClick={() => goToLink('https://www.instagram.com/3ap.ch/ ')}/>
-                        <img src={"/images/linkedin.png"} alt={'linkedin'} onClick={() => goToLink(' https://www.linkedin.com/company/3ap---as-agile-as-possible')}/>
-                        <img src={"/images/twitter.png"} alt={'twitter'} onClick={() => goToLink('https://twitter.com/3ap_inside ')}/>
+                        <img src={imageSrc('instagram.png')} alt={'instagram'} onClick={() => goToLink('https://www.instagram.com/3ap.ch/ ')}/>
+                        <img src={imageSrc('linkedin.png')} alt={'linkedin'} onClick={() => goToLink(' https://www.linkedin.com/company/3ap---as-agile-as-possible')}/>
+                        <img src={imageSrc('twitter.png')} alt={'twitter'} onClick={() => goToLink('https://twitter.com/3ap_inside ')}/>
                     </div>
                     <div className={'footer-policy'}>
                         <div onClick={() => goToLink('https://3ap.ch/en/info/data-policy')}>Privacy Policy</div>
