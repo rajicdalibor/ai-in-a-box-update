@@ -13,6 +13,7 @@
     font-size: 80px;
     font-weight: 500;
     margin-bottom: 40px;
+    z-index: 40;
 
     .main-title {
         font-family: Beausite-medium, sans-serif;

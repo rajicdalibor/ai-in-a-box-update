@@ -5,8 +5,13 @@ import ContentBox from "./ContentBox";
 import OverviewBox from "./OverviewBox";
 import ContactSection from "./ContactSection";
 import Footer from "./Footer";
+import BackgroundBoxes from "./BackgroundBoxes";
 function Layout() {
     return (
+        <div className={'layout-wrapper'}>
+
+        <BackgroundBoxes/>
+
         <div className={"container"}>
             <Navigation />
 
@@ -99,6 +104,7 @@ function Layout() {
                 <ContactSection/>
                 <Footer/>
             </div>
+        </div>
         </div>
     );
 }
