@@ -13,13 +13,18 @@
     font-size: 80px;
     font-weight: 500;
     margin-bottom: 40px;
-    z-index: 40;
+    z-index: 12;
 
     .main-title {
         font-family: Beausite-medium, sans-serif;
         font-weight: 600;
         margin-right: 16px;
         text-align: center;
+    }
+
+    .r-button {
+        margin-left: 10px;
+        font-weight: 300;
     }
 }
 

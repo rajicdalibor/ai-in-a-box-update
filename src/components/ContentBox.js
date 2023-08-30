@@ -1,6 +1,6 @@
 import ContentHeader from "./ContentHeader";
-import "./contentBox.css";
-import {goToLink, imageSrc} from "../services";
+import "./ContentBox.css";
+import {goToLink, imageSrc} from "../services/utils";
 
 function ContentBox({id, headerData, contentHeader, contentText, image, imageFirst, buttonText, contentLink}) {
     return (

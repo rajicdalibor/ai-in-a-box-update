@@ -9,7 +9,7 @@
     max-width: 1168px;
     padding: 100px 0;
     color: #FFFFFF;
-    z-index: 50;
+    z-index: 12;
 
     .overview-header {
         font-family: OpenSans, sans-serif;

@@ -1,5 +1,5 @@
-import './topicItem.css';
-import {imageSrc} from "../services";
+import './TopicItem.css';
+import {imageSrc} from "../services/utils";
 function TopicItem({image, text}) {
     return(
         <div className={'topic-wrapper'}>

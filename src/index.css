@@ -30,3 +30,8 @@ html {
   font-family: 'OpenSans';
   src: local('OpenSans-Regular'), url(./fonts/OpenSans-Regular.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Beausite-regular';
+  src: local('Beausite-regular'), url(./fonts/beausite-classic-regular.otf) format('truetype');
+}

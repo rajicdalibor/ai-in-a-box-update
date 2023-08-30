@@ -1,5 +1,5 @@
 import ContentHeader from "./ContentHeader";
-import './contactSection.css';
+import './ContactSection.css';
 import CallButton from "./CallButton";
 function ContactSection() {
     return (

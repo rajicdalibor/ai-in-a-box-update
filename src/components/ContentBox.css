@@ -5,7 +5,6 @@
     padding-top: 80px;
     padding-bottom: 80px;
     width: 100%;
-    z-index: 40;
 }
 
 .content-box-header {
@@ -15,9 +14,13 @@
 .content-details {
     display: flex;
     align-items: center;
+    max-width: 1300px;
+    width: 90%;
     gap: 30px;
     margin-left: 50px;
     margin-right: 50px;
+    z-index: 12;
+
     @media (max-width:992px)
     {
        flex-direction:column;

@@ -1,5 +1,5 @@
-import './footer.css';
-import {goToLink, imageSrc} from "../services";
+import './Footer.css';
+import {goToLink, imageSrc} from "../services/utils";
 function Footer() {
     return (
         <div id={'aboutUs'} className={'footer-wrapper'}>

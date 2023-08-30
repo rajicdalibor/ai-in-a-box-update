@@ -1,7 +1,7 @@
-import "./navigation.css";
-import { useState } from "react";
+import "./Navigation.css";
+import { useEffect, useState } from "react";
 import CallButton from "./CallButton";
-import {goToLink, imageSrc} from "../services";
+import {goToLink, imageSrc} from "../services/utils";
 
 
 const links = [
@@ -12,14 +12,23 @@ const links = [
     {id: 'aboutUs', label: 'About Us'},
 ]
 function Navigation() {
-    const hash = window?.location?.hash;
-
-    const [activeLink, setActiveLink] = useState(hash);
+    const [activeLink, setActiveLink] = useState('');
     const [menuOpen, setMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const hash = window?.location?.hash;
+        if(hash) {
+            setActiveLink(hash.slice(1));
+        }
+    }, []);
 
     const onMenuClick = (id) => {
         setActiveLink(id);
         setMenuOpen(false);
+    }
+
+    const onSelect = (id) => {
+        activeLink === id ?  setActiveLink('') : setActiveLink(id);
     }
 
     return (
@@ -30,7 +39,7 @@ function Navigation() {
                     {links.map(link => {
                             if (link.subitems?.length) {
                                 return <div key={link.id}>
-                                    <div className={'item-with-submenu'} onClick={() => setActiveLink(link.id)}>
+                                    <div className={'item-with-submenu'} onClick={() => onSelect(link.id)}>
                                         <div className={`submenu-item ${activeLink === link.id ? 'link-active' : ''}`}>
                                             <div>{link.label}</div>
                                         </div>
@@ -51,7 +60,7 @@ function Navigation() {
                                 return (
                                     <a key={link.id}
                                        className={activeLink === link.id ? 'link-active' : ''}
-                                       href={`#${link.id}`} onClick={() => setActiveLink(link.id)}>{link.label}
+                                       href={`#${link.id}`} onClick={() => onSelect(link.id)}>{link.label}
                                     </a>)
                             }
                         }
@@ -71,7 +80,7 @@ function Navigation() {
                         {links.map(link => {
                             if (link.subitems?.length) {
                                 return <div key={link.id}>
-                                    <div className={'item-with-submenu mobile-submenu-wrapper'} onClick={() => setActiveLink(link.id)}>
+                                    <div className={'item-with-submenu mobile-submenu-wrapper'} onClick={() => onSelect(link.id)}>
                                         <div className={`submenu-item ${activeLink === link.id ? 'link-active' : ''}`}>
                                             <div>{link.label}</div>
                                         {activeLink === link.id ?
@@ -82,7 +91,7 @@ function Navigation() {
                                             {link.subitems.map(item =>
                                                 <div key={item.label} className={'subitems'} onClick={() => goToLink(item.link)}>
                                                     <div>{item.label}</div>
-                                                    <img src={imageSrc('link.svg')} alt={'link'}/>
+                                                    <img src={imageSrc('link-small.svg')} alt={'link'}/>
                                                 </div>
                                             )}
                                         </div>}

@@ -1,4 +1,4 @@
-import './overviewBox.css';
+import './OverviewBox.css';
 import CallButton from "./CallButton";
 import TopicItem from "./TopicItem";
 function OverviewBox() {

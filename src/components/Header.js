@@ -1,11 +1,10 @@
-import './header.css';
-import {imageSrc} from "../services";
+import './Header.css';
+import {imageSrc} from "../services/utils";
 function Header() {
     return (
         <div className={'header-wrapper'}>
             <div className={'main-header'}>
-                <div className={'main-title'}>AI in a Box</div>
-                <span>®</span>
+                <div className={'main-title'}>AI in a Box<span className={'r-button'}>®</span></div>
             </div>
                 <div className={'header-subtitle'}>We help make automation faster.</div>
                 <p className={'header-content'}>
