@@ -10,6 +10,7 @@ function BackgroundBoxes() {
                 <div className={'boxes'} style={{top: '4600px', right: '5%'}}/>
                 <div className={'boxes'} style={{top: '5300px', left: '5%'}}/>
             </div>
+
             <div>
                 <img
                     src={imageSrc('cross-purple.svg')}
