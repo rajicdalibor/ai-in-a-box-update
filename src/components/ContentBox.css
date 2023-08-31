@@ -14,8 +14,7 @@
 .content-details {
     display: flex;
     align-items: center;
-    max-width: 1300px;
-    width: 90%;
+    max-width: 1200px;
     gap: 30px;
     margin-left: 50px;
     margin-right: 50px;
@@ -29,7 +28,6 @@
     .content-details-text {
         display: flex;
         flex-direction: column;
-        max-width: 371px;
         font-family: Beausite-light, sans-serif;
         font-weight: 300;
         font-size: 22px;
@@ -68,8 +66,8 @@
     }
 
     .content-image {
-        object-fit: fill;
         width: 100%;
+        max-width: 800px;
         height: auto;
     }
 
