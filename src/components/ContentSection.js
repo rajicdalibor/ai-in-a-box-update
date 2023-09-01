@@ -74,13 +74,11 @@ function ContentSection() {
                 contentHeader={'Document Classification'}
                 contentText={["Simplify document management with our Document Classification service, accurately categorizing and organizing your files for easy retrieval and streamline."]}
                 image={'document-classification.svg'}
-                contentLink={'https://www.google.com'}
             />
             <ContentBox
                 contentHeader={'Field Extraction'}
                 contentText={["Empower your data-driven processes with Field Extraction, a powerful combination of OCR and data retrieval, extracting and organizing critical information from documents seamlessly."]}
                 image={'field-extraction.svg'}
-                contentLink={'https://www.google.com'}
             />
             <ContentBox
                 contentHeader={'Document Enrichment'}

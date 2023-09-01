@@ -8,7 +8,6 @@ const links = [
     {id: 'ai', label: 'AI in a Box®'},
     {id: 'components', label: 'Components'},
     {id: 'services', label: 'Services'},
-    {id: 'demos', label: 'Demos', subitems: [{label:'Document Classification', link: 'https://www.google.com'}, {label:'Field Extraction', link: 'https://www.google.com'}]},
     {id: 'aboutUs', label: 'About Us'},
 ]
 function Navigation() {
