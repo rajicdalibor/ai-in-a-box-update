@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/ai-in-a-box-update/static/js/main.ef7d3391.js",
     "main.css": "/ai-in-a-box-update/static/css/main.2fa7670b.css",
+    "main.js": "/ai-in-a-box-update/static/js/main.88204286.js",
     "static/js/787.4ce1f97f.chunk.js": "/ai-in-a-box-update/static/js/787.4ce1f97f.chunk.js",
     "static/media/beausite-classic-light.ttf": "/ai-in-a-box-update/static/media/beausite-classic-light.66e83cbd4a0f448287fa.ttf",
     "static/media/beausite-classic-medium.ttf": "/ai-in-a-box-update/static/media/beausite-classic-medium.34da02e0903c611b84fa.ttf",
     "static/media/open-sans-medium.ttf": "/ai-in-a-box-update/static/media/open-sans-medium.5b0a682fe3717764627e.ttf",
     "static/media/beausite-classic-regular.otf": "/ai-in-a-box-update/static/media/beausite-classic-regular.2d0f11b6cf94981c1906.otf",
     "index.html": "/ai-in-a-box-update/index.html",
-    "main.ef7d3391.js.map": "/ai-in-a-box-update/static/js/main.ef7d3391.js.map",
     "main.2fa7670b.css.map": "/ai-in-a-box-update/static/css/main.2fa7670b.css.map",
+    "main.88204286.js.map": "/ai-in-a-box-update/static/js/main.88204286.js.map",
     "787.4ce1f97f.chunk.js.map": "/ai-in-a-box-update/static/js/787.4ce1f97f.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.ef7d3391.js",
-    "static/css/main.2fa7670b.css"
+    "static/css/main.2fa7670b.css",
+    "static/js/main.88204286.js"
   ]
 }
