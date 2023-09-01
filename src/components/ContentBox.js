@@ -2,9 +2,9 @@ import ContentHeader from "./ContentHeader";
 import "./ContentBox.css";
 import {goToLink, imageSrc} from "../services/utils";
 
-function ContentBox({id, headerData, contentHeader, contentText, image, imageFirst, buttonText, contentLink}) {
+function ContentBox({id, headerData, contentHeader, contentText, image, imageFirst, buttonText, contentLink, paddingTopLarge}) {
     return (
-        <section className={'content-box-container'} id={id}>
+        <section className={`content-box-container ${paddingTopLarge ? 'padding-top-large' : ''}`} id={id}>
             {headerData && <div className={'content-box-header'}><ContentHeader headerData={headerData} /></div> }
             <div className={`content-details ${imageFirst ? "reverse-order" : ""}`}>
                 <div className={'content-details-text'}>

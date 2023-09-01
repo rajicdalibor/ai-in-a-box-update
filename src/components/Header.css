@@ -66,6 +66,10 @@
 }
 
 .header-image {
+    position: relative;
+    top: 60px;
+    max-width: 648px;
     width: 100%;
     height: auto;
+    margin-bottom: -100px;
 }

@@ -21,6 +21,7 @@ function ContentSection() {
                 headerData={{title: 'COMPONENTS', subtitle: 'Powering Possibilities', header: 'Explore the key components of AI in the Box® platform'}}
                 contentHeader={'Image Quality Assessment'} contentText={["Ensure optimal document representation with Image Quality Assessment, accurately ", <strong><i>evaluating image quality</i></strong>, " as high or low for further processing."]}
                 image={'image-quality.svg'}
+                paddingTopLarge
             />
             <ContentBox
                 contentHeader={'OCR Extraction'}
