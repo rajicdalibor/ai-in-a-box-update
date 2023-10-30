@@ -25,7 +25,7 @@ function ContentSection() {
             />
             <ContentBox
                 contentHeader={'OCR Extraction'}
-                contentText={["Unlock the content within documents with OCR Extraction, efficiently ", <strong><i>evaluating image quality</i></strong>, " and analysis."]}
+                contentText={["Unlock the content within documents with OCR Extraction, efficiently ", <strong><i>extracting text for enhanced accessibility</i></strong>, " and analysis."]}
                 image={'ocr-extraction.svg'}
                 imageFirst
             />
