@@ -1,0 +1,129 @@
+.content-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+.padding-top-large {
+    padding-top: 180px !important;
+}
+
+.content-box-header {
+    margin-bottom: 80px;
+}
+
+.content-details {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    z-index: 12;
+
+    @media (max-width:992px)
+    {
+       flex-direction:column;
+    }
+
+    .content-details-text {
+        display: flex;
+        flex-direction: column;
+        font-family: Beausite-light, sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 36px;
+        color: #555555;
+
+        .content-details-header {
+            font-family: Beausite-medium, sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 43px;
+            margin-bottom: 10px;
+            color: #222222;
+        }
+
+        @media (max-width:992px)
+        {
+            width: fit-content;
+            max-width: 700px;
+        }
+
+        .content-link {
+            background-color: #5048E5;
+            color: #FFFFFF;
+            font-family: Beausite-light, sans-serif;
+            font-size: 22px;
+            line-height: 26px;
+            padding: 10px 20px;
+            width: fit-content;
+            margin-top: 10px;
+            gap: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+        }
+    }
+
+    .content-image {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+    }
+}
+
+.reverse-order {
+    flex-direction: row-reverse;
+    @media (max-width:992px)
+    {
+        flex-direction:column;
+    }
+}
+
+.content-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+
+    .content-header-subtitle {
+        font-family: OpenSans, sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .content-header-text {
+        font-family: Beausite-light, sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 36px;
+        text-align: center;
+        max-width: 600px;
+        color: #555555;
+    }
+
+    .title-dark {
+        color: #FFFFFF;
+    }
+}
+
+.content-header-title {
+    border-radius: 4px;
+    padding: 8px 32px;
+    gap: 10px;
+    font-size: 22px;
+    line-height: 24px;
+    color: #8489FF;
+    font-family: Beausite-medium, sans-serif;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    width: fit-content;
+    align-self: center;
+}

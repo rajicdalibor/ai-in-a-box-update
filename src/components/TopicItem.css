@@ -1,0 +1,17 @@
+.topic-wrapper {
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.topic-text {
+    max-width: 142px;
+    font-family: Beausite-light, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 600;
+    margin: 20px 0
+}
