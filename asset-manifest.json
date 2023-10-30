@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ai-in-a-box-update/static/css/main.81ac48df.css",
-    "main.js": "/ai-in-a-box-update/static/js/main.113ddfd0.js",
-    "static/js/787.4ce1f97f.chunk.js": "/ai-in-a-box-update/static/js/787.4ce1f97f.chunk.js",
-    "static/media/beausite-classic-light.ttf": "/ai-in-a-box-update/static/media/beausite-classic-light.66e83cbd4a0f448287fa.ttf",
-    "static/media/beausite-classic-medium.ttf": "/ai-in-a-box-update/static/media/beausite-classic-medium.34da02e0903c611b84fa.ttf",
-    "static/media/open-sans-medium.ttf": "/ai-in-a-box-update/static/media/open-sans-medium.5b0a682fe3717764627e.ttf",
-    "static/media/beausite-classic-regular.otf": "/ai-in-a-box-update/static/media/beausite-classic-regular.2d0f11b6cf94981c1906.otf",
-    "index.html": "/ai-in-a-box-update/index.html",
-    "main.81ac48df.css.map": "/ai-in-a-box-update/static/css/main.81ac48df.css.map",
-    "main.113ddfd0.js.map": "/ai-in-a-box-update/static/js/main.113ddfd0.js.map",
-    "787.4ce1f97f.chunk.js.map": "/ai-in-a-box-update/static/js/787.4ce1f97f.chunk.js.map"
+    "main.css": "/static/css/main.bf6fb744.css",
+    "main.js": "/static/js/main.cb2ac7aa.js",
+    "static/js/787.7f2e02e1.chunk.js": "/static/js/787.7f2e02e1.chunk.js",
+    "static/media/beausite-classic-light.ttf": "/static/media/beausite-classic-light.66e83cbd4a0f448287fa.ttf",
+    "static/media/beausite-classic-medium.ttf": "/static/media/beausite-classic-medium.34da02e0903c611b84fa.ttf",
+    "static/media/open-sans-medium.ttf": "/static/media/open-sans-medium.5b0a682fe3717764627e.ttf",
+    "static/media/beausite-classic-regular.otf": "/static/media/beausite-classic-regular.2d0f11b6cf94981c1906.otf",
+    "index.html": "/index.html",
+    "main.bf6fb744.css.map": "/static/css/main.bf6fb744.css.map",
+    "main.cb2ac7aa.js.map": "/static/js/main.cb2ac7aa.js.map",
+    "787.7f2e02e1.chunk.js.map": "/static/js/787.7f2e02e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81ac48df.css",
-    "static/js/main.113ddfd0.js"
+    "static/css/main.bf6fb744.css",
+    "static/js/main.cb2ac7aa.js"
   ]
 }
